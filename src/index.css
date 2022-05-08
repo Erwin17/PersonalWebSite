@@ -29,9 +29,21 @@ code {
 
 #menu-mobile{
   grid-area: menu;
-  /*border:1px solid red;*/
+  display: flex;
+  flex-direction: row-reverse;
+  padding:20px;
 }
 
+#icon-bars{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #252525;
+  font-size: 36px;;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
 
 #description{
   grid-area: content;

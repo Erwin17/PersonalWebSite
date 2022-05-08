@@ -14,8 +14,8 @@ function App() {
   
 <div className="container">
     <div id="menu-mobile">
-      <div id="icon-bars" style={{color: "red", fontSize: "36px"}}>
-          <FontAwesomeIcon icon={faBars} />
+      <div id="icon-bars">
+          <FontAwesomeIcon icon={faBars} style={{color: "white"}} />
       </div>
     </div>
 
