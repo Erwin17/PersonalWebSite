@@ -6,7 +6,12 @@ import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 import './App.css';
+import './BorderBoxes.css'
 
 function App() {
   return (
@@ -19,7 +24,39 @@ function App() {
       </div>
     </div>
 
-    <div id="description">
+
+            {/*=========Sidebar=======*/}
+    <div id="sidebar">
+          
+          <div id="distribu-sidebar">
+              <div id="content-logo-title-desk">
+                <div id="content-logo-desk"></div>
+                <h1>Erwin Corzo</h1>
+              </div>
+              <div id="item-menu-sidebar">
+                  <ul>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Project</li>
+                    <li>Curriculum Vitae</li>
+                    <li>Contact</li>
+                  </ul>
+              </div>
+            </div>
+            <div id="social-network-link">
+                <div><a href="https://www.facebook.com/erwin.corzo.319" target="_blank"><FontAwesomeIcon icon={faFacebook} /> </a></div>
+                <div><a href="https://www.instagram.com/erwin.corzo.319/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></div>
+                <div><a href="https://github.com/Erwin17?tab=repositories"><FontAwesomeIcon icon={faGithub} /></a></div>
+            </div>
+
+          
+          
+
+          
+    </div>
+
+    <div id="content">
+        
         <div id="general-info-content">
             <div>
               <div id="content-logo"></div>
@@ -33,14 +70,6 @@ function App() {
             </div>    
         </div>
     </div>
-
-    
-    {/*<div id="menu">
-    <FontAwesomeIcon icon={faHouse} />
-    <FontAwesomeIcon icon={faUserLarge} />
-    <FontAwesomeIcon icon={faBriefcase} />
-    <FontAwesomeIcon icon={faAddressBook} />
-    </div>*/}
 
 </div>
   );

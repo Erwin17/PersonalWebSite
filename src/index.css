@@ -14,6 +14,9 @@ code {
     monospace;
 }
 
+#sidebar{
+  display: none;
+}
 
 .container{
   display: grid;
@@ -45,26 +48,25 @@ code {
   cursor: pointer;
 }
 
-#description{
+#content{
   grid-area: content;
   display: flex;
-  /*border:1px solid red;*/
 }
 
 #general-info-content{
-  /*border:1px solid peru;*/
   display: flex;
   align-items: center;
   margin: 0 auto;
   max-width: 550px;;
 }
 
-#content-logo{
+#content-logo, #content-logo-desk{
   background-image: url("./assets/image/logo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: aqua;
-  border: 4px solid #252525;
+  /*border: 4px solid #252525;*/
+  border: 10px solid #343A40;
+
   height: 270px;
   width: 270px;
   margin: 0 auto;
@@ -74,7 +76,7 @@ code {
 #personal-description h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;;
-  color: #FFB400;
+  color: #20c997;
   text-transform: uppercase;
   font-size: 40px;
   text-align: center;
@@ -98,11 +100,10 @@ code {
 #buttom-about-me {
   margin-top:30px;
   display: flex;
-  /*border:1px solid green;*/
 }
 
 #btn-about{
-  border:1px solid #FFB400;
+  border:1px solid #20c997;
   overflow: hidden;
     display: inline-block;
     line-height: 1.4;
@@ -128,11 +129,98 @@ code {
 }
 
 #btn-about:hover{
-  background-color: #FFB400;;
+  background-color: #20c997;
 }
 
+/*=================Sidebar====================*/
+
+
+
 /*======Media Query=====*/
-@media (min-width: 500px){
+@media (min-width: 993px){
   
+  #content-logo, #menu-mobile{
+    display: none;
+  }
+
+  #sidebar{
+    display: block;
+  }
+
+  .container{
+    display: grid;
+    grid-template-areas: 
+    'sidebar content';
+    grid-template-columns: 260px auto;
+    grid-template-rows: 1fr;
+    justify-items: flex-start;
+    height: 100vh;
+    width: 100%;
+  }
+
+
+
+  #sidebar{
+    grid-area: sidebar;
+    display: flex;
+    background-color: #111418;
+    padding-top:30px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #content-logo-title-desk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #content-logo-desk{
+    height: 190px;
+    width: 190px;
+  }
+
+#content-logo-title-desk h1{
+  margin:0px;
+}
+
+#item-menu-sidebar{
+    margin-top: 30px;
+}
+
+#item-menu-sidebar ul{
+    text-align: center;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#item-menu-sidebar ul li {
+  padding: 10px 0px;
+}
+
+#item-menu-sidebar ul li:hover{
+  color: #20c997;
+  cursor:pointer;
+}
+
+/*==========Social Network==========*/
+#social-network-link{
+  display: flex;
+  justify-content: center;
+}
+
+#social-network-link div{
+  margin-left:10px;
+   margin-right: 10px;;
+}
+/*======Content=====*/
+
+  #content{
+    grid-area: content;
+    width: 100%;
+  }
+
 }
 
