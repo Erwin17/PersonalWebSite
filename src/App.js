@@ -1,14 +1,16 @@
 import images from './assets/image/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faHouse} from '@fortawesome/free-solid-svg-icons';
-import { faUserLarge } from '@fortawesome/free-solid-svg-icons';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+
+import About from './pages/About';
+import Whatido from './pages/Whatido';
+import Project from './pages/Project';
+import Contact from './pages/Contact';
 
 import './App.css';
 import './BorderBoxes.css'
@@ -34,13 +36,21 @@ function App() {
                 <h1>Erwin Corzo</h1>
               </div>
               <div id="item-menu-sidebar">
-                  <ul>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Project</li>
-                    <li>Curriculum Vitae</li>
-                    <li>Contact</li>
-                  </ul>
+                  <Router>
+                    <ul>
+                      <li><Link to="/">Home</Link></li>
+                      <li><Link to="/about">About Me</Link></li>
+                      <li><Link to="/whatido">What I Do</Link></li>
+                      <li><Link to="/project">Project</Link></li>
+                      <li><Link to="/contact">Contact</Link></li>
+                    </ul>
+                      <Routes>
+                        <Route path="/about" element={<About />} />
+                        <Route path="/whatido" element={<Whatido />}/>
+                        <Route path="/project" element={<Project />}/>
+                        <Route path="/contact" element={<Contact />} />
+                      </Routes>
+                  </Router>
               </div>
             </div>
             <div id="social-network-link">
