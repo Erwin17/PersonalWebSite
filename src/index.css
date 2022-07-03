@@ -6,12 +6,42 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color:white;
-  background-color: #111111;
+  background-color: #212529 !important;;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.underrescord{
+  border-bottom: 5px solid #20c997;
+}
+
+.text-principal-color{
+  color: #20c997
+}
+
+.btn-dow{
+  margin-top: 20px;;
+  max-width: 196px;
+  background-color: #20c997;
+  border-color: #20c997;
+  padding: 0.8rem 2.6rem;
+  font-weight: 500;
+  border-width: 2px;
+  border-radius: 50rem!important;
+  color: #fff;
+  line-height: 1.5;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.fw-table{
+  font-weight: 600 !important;
+  margin-right: 0.5rem!important;
+  color: #dee3e4 !important;
 }
 
 #sidebar{
@@ -236,36 +266,113 @@ code {
 /*==================About me==============*/
 
 #general-info-content-about{
-  border: 1px solid red;
   display: grid;
+  align-items: center;
   grid-template-areas: 
-  'title title'
-  'description table-detail'
-  'details details';
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 5fr 1fr;
+  'title'
+  'description'
+  'details';
+  grid-template-columns:1fr;
+  grid-template-rows: 1fr 4fr 1fr;
   width: 100%;
+  /*border: 1px solid red;*/
 }
 
 #personal-title{
   grid-area: title;
   display: flex;
-  border:1px solid purple;
+  justify-content: center;
+  align-items: center;
+  /*border:1px solid purple;*/
 }
+
+#title-content{
+  font-size: 33px;;
+  /*border:1px solid red;*/
+}
+
+
 
 #description-about{
   grid-area: description;
   display: flex;
-  border:1px solid yellow;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 900px;
+  max-width: 1200px;
+  /*border:1px solid yellow;*/
+}
+
+#about-content h3{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#about-content p{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255,255,255,.5)!important;
 }
 
 #description-table{
   grid-area: table-detail;
   display: flex;
-  border:1px solid violet;
+  flex-direction: column;
+  justify-content: center;
+  /*border:1px solid violet;*/
+}
+
+#description-table ul {
+  margin: 0;
+  padding: 0;
+  width: 360px;
+}
+#description-table ul li{
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.12);
+  padding-top: 12px;
+  padding-bottom: 12px;
+
 }
 
 #details{
   grid-area: details;
-  border: 1px solid brown;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ /* border: 1px solid brown;*/
 }
+
+#details p{
+  margin:0;
+}
+
+#details > div{
+  padding-top: 20px;;
+  margin-left:5px;
+  margin-right: 5px;;
+  text-align: center;
+  border-right: 1px dotted rgba(250, 250, 250, 0.15);
+  width:25%;
+  /*border:1px solid red;*/
+}
+
+#details .yearx{
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 3rem;
+  color: rgba(255,255,255,.5)!important;
+  text-align: center;
+}
+
+#details .yeard{
+  color:#dee3e4 !important;
+  line-height: 1.8;
+  text-align: center;
+}
+
+
+
+
