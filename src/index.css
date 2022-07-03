@@ -300,7 +300,12 @@ code {
   margin: 0 auto;
   max-width: 900px;
   max-width: 1200px;
+  padding:10px;
   /*border:1px solid yellow;*/
+}
+
+#about-content{
+  padding:5px;
 }
 
 #about-content h3{
@@ -373,6 +378,22 @@ code {
   text-align: center;
 }
 
+
+@media(max-width:993px){
+  #description-about{
+    flex-direction: column;
+    width:70%;
+  }
+
+  #about-content h3, p{
+    text-align: center;
+  }
+
+  #description-table ul{
+    width:100%;
+  }
+  
+}
 
 
 
