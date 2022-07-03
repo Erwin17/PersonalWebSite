@@ -392,8 +392,54 @@ code {
   #description-table ul{
     width:100%;
   }
-  
 }
 
 
+/*===========What i do===========*/
+
+/*===========Project===========*/
+
+#general-info-container{
+  display:grid;
+  grid-template-areas:
+  'titleprooject'
+  'detailsproject';
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  width: 100%;;
+}
+
+#title-project{
+  grid-area: titleprooject;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid red;
+}
+
+#title-content-project{
+  font-size: 33px;
+}
+
+#details-project{
+  grid-area: detailsproject;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+
+  border:1px solid blue;
+}
+
+.itembox{
+  height: 300px;
+  min-width:300px;
+  margin:5px;
+  flex-grow: 1;
+  
+  border:1px solid yellowgreen;
+
+}
+
+/*===========Contact===========*/
 

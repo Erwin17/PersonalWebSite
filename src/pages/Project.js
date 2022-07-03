@@ -16,9 +16,26 @@ export default function Project (){
 {/*=======Sidebar=======*/}
 <Sidebar />
 
-<div id="content">
-        project
-</div>
+        <div id="general-info-container">
+                
+                <div id="title-project">
+                    <div id="title-content-project">
+                        <h2><span className='underrescord'>My</span> Projects</h2>
+                    </div>
+                </div>
+
+                <div id="details-project">
+                    <div className="itembox">Project 1</div>
+                    <div className="itembox">Project 2</div>
+                    <div className="itembox">Project 3</div>
+                    <div className="itembox">Project 4</div>
+                    <div className="itembox">Project 5</div>
+                    <div className="itembox">Project 6</div>
+                    <div className="itembox">Project 7</div>
+                </div>
+        </div>
+
+
 </div>
     );
 }
