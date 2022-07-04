@@ -16,9 +16,16 @@ export default function Contact(){
         {/*=======Sidebar=======*/}
         <Sidebar />
     
-        <div id="content">
-                
-                what i do
+        <div id="general-info-content-contact">
+            <div id="contact-title">
+                <div id="title-content">
+                    <h2>Get <span className='underrescord'>in Touch</span></h2>
+                </div>
+            </div> 
+
+            <div id="contact-content">
+                <h2>Contenido</h2>
+            </div>
     
         </div>
     

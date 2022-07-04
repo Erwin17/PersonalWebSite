@@ -22,7 +22,7 @@ export default function sidebar(){
                     <ul>
                       <li><Link className="link-sidebar" to="/">Home</Link></li>
                       <li><Link className="link-sidebar" to="/about">About Me</Link></li>
-                      <li><Link className="link-sidebar" to="/whatido">What I Do</Link></li>
+                      {/*<li><Link className="link-sidebar" to="/whatido">What I Do</Link></li>*/}
                       <li><Link className="link-sidebar" to="/project">Project</Link></li>
                       <li><Link className="link-sidebar" to="/contact">Contact</Link></li>
                     </ul>

@@ -427,19 +427,40 @@ code {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0.5rem;
-
   border:1px solid blue;
 }
 
 .itembox{
-  height: 300px;
+  max-height: 300px;
   min-width:300px;
   margin:5px;
   flex-grow: 1;
-  
   border:1px solid yellowgreen;
-
 }
 
 /*===========Contact===========*/
+#general-info-content-contact{
+  display: grid;
+  grid-template-areas:
+  'contacttitle'
+  'contactcontent';
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
 
+#contact-title{
+  grid-area: contacttitle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:1px solid peru;
+}
+
+#contact-content{
+  grid-area: contactcontent;
+  display: flex;
+  
+  justify-content: center;
+  border:1px solid red;
+}
