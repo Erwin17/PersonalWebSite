@@ -9,7 +9,9 @@ import {Link}  from "react-router-dom";
 
 export default function sidebar(){
 
-
+  const message = () => {
+    alert('Sección en Construcción');
+  }
     return (
         <div id="sidebar">
           
@@ -20,11 +22,17 @@ export default function sidebar(){
               </div>
               <div id="item-menu-sidebar">
                     <ul>
-                      <li><Link className="link-sidebar" to="/">Home</Link></li>
-                      <li><Link className="link-sidebar" to="/about">About Me</Link></li>
-                      {/*<li><Link className="link-sidebar" to="/whatido">What I Do</Link></li>*/}
-                      <li><Link className="link-sidebar" to="/project">Project</Link></li>
-                      <li><Link className="link-sidebar" to="/contact">Contact</Link></li>
+                    <li><Link className="link-sidebar" to="/">Inicio</Link></li>
+                      {/*<li><Link className="link-sidebar" to="/">Home</Link></li>*/}
+
+                      <li><Link className="link-sidebar" to="/about">Sobre Mi</Link></li>
+                      {/*<li><Link className="link-sidebar" to="/about">About Me</Link></li>*/}
+                      
+                      <li><Link className="link-sidebar" onClick={message} to="/">Proyectos</Link></li>
+                      {/*<li><Link className="link-sidebar" to="/project">Project</Link></li>*/}
+                      
+                      <li><Link className="link-sidebar" onClick={message} to="/">Contacto</Link></li>
+                      {/*<li><Link className="link-sidebar" to="/contact">Contact</Link></li>*/}
                     </ul>
               </div>
             </div>

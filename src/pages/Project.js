@@ -1,26 +1,36 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Sidebar from './../components/sidebar/sidebar';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 
 export default function Project (){
 
+    const navigate = useNavigate();
+
+    const message = () =>{
+        alert("Sección en Construcción");
+        //<Redirect to="/home" />
+        //navigate('/home');
+    }
     return (
         <div className="container">
-        <div id="menu-mobile">
+            {message()}
+        {/*<div id="menu-mobile">
         <div id="icon-bars">
             <FontAwesomeIcon icon={faBars} style={{color: "white"}} />
         </div>
-        </div>
+    </div>*/}
 
 
 {/*=======Sidebar=======*/}
 <Sidebar />
 
-        <div id="general-info-container">
+        {/*<div id="general-info-container">
                 
                 <div id="title-project">
                     <div id="title-content-project">
-                        <h2><span className='underrescord'>My</span> Projects</h2>
+                        <h2><span className='underrescord'>Mis</span> Proyectos</h2>
                     </div>
                 </div>
 
@@ -33,7 +43,7 @@ export default function Project (){
                     <div className="itembox">Project 6</div>
                     <div className="itembox">Project 7</div>
                 </div>
-        </div>
+        </div>*/}
 
 
 </div>

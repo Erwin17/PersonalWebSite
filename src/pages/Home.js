@@ -29,11 +29,12 @@ export default function Home(){
             <div>
             <div id="content-logo"></div>
             <div id="personal-description">
-                    <h1>I'm Erwin Corzo. <span>Software Developer</span></h1>
-                    <p>I am a software developer based in a beautiful  country called Colombia. I'm Venezuelan of birth. I'm am passionate about building excellent software that improves the lives of those around me.</p>
+                    <h1>Erwin Corzo. <span>Software Developer</span></h1>
+                    <p>Soy un desarrollador de software localizado en un hermoso país llamado Colombia. Soy venezolano de nacimiento. Me apasiona crear software que mejore la vida de quienes me rodean.</p>
+                    {/*<p>I am a software developer based in a beautiful  country called Colombia. I'm Venezuelan of birth. I'm am passionate about building excellent software that improves the lives of those around me.</p>*/}
             </div>
             <div id="buttom-about-me">
-                <button id="btn-about" onClick={redirectoAbout}>MORE ABOUT ME</button>
+                <button id="btn-about" onClick={redirectoAbout}>Mas Sobre mi</button>
             </div>
             </div>    
         </div>
