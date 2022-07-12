@@ -30,7 +30,9 @@ export default function Home(){
             <div id="content-logo"></div>
             <div id="personal-description">
                     <h1>Erwin Corzo. <span>Software Developer</span></h1>
-                    <p>Soy un desarrollador de software localizado en un hermoso país llamado Colombia. Soy venezolano de nacimiento. Me apasiona crear software que mejore la vida de quienes me rodean.</p>
+                    <p>Soy un desarrollador de software con varios años de experiencia en el sector IT.  Me apasiona crear software de calidad, de valor y que mejore la vida de quienes me rodean.</p>
+                    
+                    {/*<p>Soy un desarrollador de software localizado en un hermoso país llamado Colombia. Soy Venezolano de nacimiento. Me apasiona crear software que mejore la vida de quienes me rodean.</p>*/}
                     {/*<p>I am a software developer based in a beautiful  country called Colombia. I'm Venezuelan of birth. I'm am passionate about building excellent software that improves the lives of those around me.</p>*/}
             </div>
             <div id="buttom-about-me">

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import {Link}  from "react-router-dom";
 
@@ -39,7 +40,8 @@ export default function sidebar(){
             <div id="social-network-link">
                 <div><a className='icon-link' href="https://www.facebook.com/erwin.corzo.319" target="_blank"><FontAwesomeIcon icon={faFacebook} /> </a></div>
                 <div><a className="icon-link" href="https://www.instagram.com/erwin.corzo.319/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></div>
-                <div><a className="icon-link" href="https://github.com/Erwin17?tab=repositories"><FontAwesomeIcon icon={faGithub} /></a></div>
+                <div><a className="icon-link" href="https://github.com/Erwin17?tab=repositories" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></div>
+                <div><a className="icon-link" href="https://www.linkedin.com/in/erwin-corzo-9613761aa/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></div>
             </div>
     </div>
     );
